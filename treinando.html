@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pipoco do trovão</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body class="bg-success p-2 text-dark bg-opacity-25 ">
-    <form>
+    <form class="bg-success p-2 text-dark bg-opacity-25 border rounded-4 shadow-lg p-3 mb-5 bg-body rounded">
+        <h1 class="form-group row justify-content-center">Pipoco do trovão</h1>
         <div class="form-group row justify-content-center">
             <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-5">
@@ -19,27 +20,28 @@
             </div>
         </div>
         <div class="form-group row justify-content-center">
-            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <label for="inputPassword" class="col-sm-2 col-form-label">Senha</label>
             <div class="col-sm-5">
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
             </div>
         </div>
         <!-- Botões -->
-        <div class="justify-content-center">
+        <div class="form-group position-relative">
+        <div class="position-absolute top-50 start-50 translate-middle mt-5">
             <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Submit
+                Entrar
             </button>
-            <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Reset</button>
+            <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Resetar</button>
+            </div>
         </div>
         <!-- Modal -->
         <div class="modal fade col-8" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                    <div id="alerta" class="modal-header alert alert-success" role="alert">
-                        Enviado com sucesso!
-                    </div>
+                <div id="alerta" class="modal-header alert alert-success" role="alert">
+                    Enviado com sucesso!
+                </div>
             </div>
         </div>         
-      </div>
     </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
